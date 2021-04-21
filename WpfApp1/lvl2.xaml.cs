@@ -27,6 +27,8 @@ namespace WpfApp1
         private void btnShoot_Click(object sender, RoutedEventArgs e)
         {
             txtboxBewaker.Text = "U hebt de bewaker gedood, u bent vrij!";
+            imgDwarden.Opacity = 1;
+            imgWarden.Opacity = 0;
         }
     }
 }

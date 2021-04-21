@@ -130,9 +130,6 @@
     <Resource Include="images\heart.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="images\kill.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="kill.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -140,6 +137,18 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="safe.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\background.jpeg" />
+    <Resource Include="images\pistol.png" />
+    <Resource Include="images\safe.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\deadWarden.png" />
+    <Resource Include="images\warden.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\gun.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

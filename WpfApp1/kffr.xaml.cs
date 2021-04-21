@@ -39,5 +39,7 @@ namespace WpfApp1
                 lblAnswer.Content = "Fout";
             }
         }
+
+
     }
 }

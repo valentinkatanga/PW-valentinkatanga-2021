@@ -32,20 +32,36 @@ namespace WpfApp1
         public MainWindow(bool completed)
         {
             InitializeComponent();
-            imgPistol.Opacity = 1;
+            imgPistol.Opacity = 2;
         }
         public void operationC()
         {
-            imgPistol.Opacity = 1;
+            imgPistol.Opacity = 3.5;
+            lblBoxmsg.Content = lblBoxmsg.Content + "\n" + "Ik heb het wapen gevonden! (klik erop)";
+
         }
-        
+        int count = 0;
+
+
 
         private void btnHint_Click(object sender, RoutedEventArgs e)
         {
-            txtBoxmsg.Text = "Van Gogh Vincent ";
-            imgH1.Opacity = 0.2;
-
-
+            count++;
+            
+            switch (count)
+            {
+                case 1: imgH1.Opacity = 0.2;
+                lblBoxmsg.Content = "Hint 1: Van Gogh Vincent";
+                    break;
+                case 2: imgH2.Opacity = 0.2;
+                    lblBoxmsg.Content = "Hint 2: D*****steen";
+                    break;
+                default:
+                    imgH3.Opacity = 0.2;
+                    lblBoxmsg.Content = "U bent dood, sorry";
+                    imgBack.Opacity = 0.5;
+                    break;
+            }
         }
 
         private void btnTapijt_Click(object sender, RoutedEventArgs e)
@@ -143,8 +159,7 @@ namespace WpfApp1
 
         private void btnKastje_Click(object sender, RoutedEventArgs e)
         {
-            
-            txtBoxmsg.Text = txtBoxmsg.Text + "\n" + "Ik heb de kogels gevonden voor het wapen";
+
             btnTapijt.Content = "";
             btnZetel.Content = "";
             btnBord.Content = "";
@@ -154,12 +169,12 @@ namespace WpfApp1
             btnTafel.Content = "";
             btnKastje.Content = "";
             btnAardbol.Content = "";
-            imgLoad.Opacity = 1;
+            btnKastje.Content = "Juwelen";
         }
 
         private void btnAardbol_Click(object sender, RoutedEventArgs e)
         {
-            txtBoxmsg.Text = "";
+            lblBoxmsg.Content = "";
             btnTapijt.Content = "";
             btnZetel.Content = "";
             btnBord.Content = "";
@@ -173,7 +188,7 @@ namespace WpfApp1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            imgBack.Opacity = 1;
+            imgBack.Opacity = 0.9;
         }
 
 
