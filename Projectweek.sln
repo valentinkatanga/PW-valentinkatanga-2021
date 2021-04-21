@@ -5,6 +5,15 @@ VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{1DF25333-2E54-440B-91E6-A41F539BEB94}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "img", "img", "{643EEA69-AE4D-45F7-8DA9-6A1A2323EC4A}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\img\ammo.jpg = ..\..\img\ammo.jpg
+		..\..\img\background.jpeg = ..\..\img\background.jpeg
+		WpfApp1\images\heart.png = WpfApp1\images\heart.png
+		..\..\img\pistol.png = ..\..\img\pistol.png
+		..\..\img\safe.jpeg = ..\..\img\safe.jpeg
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

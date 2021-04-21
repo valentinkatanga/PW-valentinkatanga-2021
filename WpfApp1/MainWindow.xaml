@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="582" Width="808.4">
     <Grid Margin="0,0,-46.4,-29.2">
-        <Image x:Name="imgBack" Opacity="0.5" Margin="0,0,48,25" Source="photo_escaperoom.jpeg" Stretch="Fill"/>
+        <Image x:Name="imgBack" Opacity="0.5" Margin="0,0,48,25" Source="images/background.jpeg" Stretch="Fill"/>
         <Button x:Name="btnBord" BorderThickness="0" HorizontalAlignment="Left" Margin="76,78,0,0" FontSize="20px" VerticalAlignment="Top" Width="123" Background="Transparent" Foreground="White" Height="79" Click="btnBord_Click" />
         <Button x:Name="btnhorloge" BorderThickness="0"  HorizontalAlignment="Left" FontSize="20px" Margin="0,251,0,0" VerticalAlignment="Top" Width="109" Height="57" Background="Transparent" Foreground="White" Click="btnhorloge_Click" />
         <Button x:Name="btnBoekenkast" BorderThickness="0" Background="Transparent" FontSize="12px" HorizontalAlignment="Left" Margin="516,150,0,0" VerticalAlignment="Top" Width="75" Height="105" Foreground="White" Click="btnBoekenkast_Click"></Button>
@@ -20,14 +20,13 @@
         <TextBox x:Name="txtBoxmsg" BorderThickness="0" Background="Transparent" Foreground="White" FontSize="15" HorizontalAlignment="Left" Height="133" Margin="267,68,0,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="324" Text="LOOK FOR THE WEAPONG TO KILL THE GUARD"/>
         <Label x:Name="lblBox" Background="Transparent" FontWeight="Bold" Foreground="White" FontSize="18px" Content="ESCAPE OR DIE  " HorizontalAlignment="Left" Margin="357,18,0,0"  VerticalAlignment="Top" Height="48" Width="193"/>
         <Button x:Name="btnKastje" BorderThickness="0" Background="Transparent"  Foreground="White" FontSize="20px" HorizontalAlignment="Left" Margin="608,251,0,0" VerticalAlignment="Top" Width="37" Height="11" Click="btnKastje_Click"/>
-        <Image Opacity="0.2" x:Name="imgPistol" Margin="689,410,76,99" Source="téléchargement.png" Stretch="Fill"   x:FieldModifier="public"  />
-        <Image Opacity="0.2" x:Name="imgLoad" Margin="689,483,76,26" Source="vue-laterale-arriere-balles-coups-neuf-mm-cuivre-or-tete-acier-pour-parabelle-arme-poing-militaire-munitions-armes-feu-metal-isole-fond-transparent-icone-3d-realiste_107791-4297.jpg" Stretch="Fill"/>
-        <Image x:Name="imgH1" Margin="0,524,793,25" Source="png-clipart-minecraft-drawing-pixel-art-the-legend-of-zelda-majora-s-mask-minecraft-heart.png" Stretch="Fill"/>
-        <Image x:Name="imgH3" Margin="120,524,673,26" Source="png-clipart-minecraft-drawing-pixel-art-the-legend-of-zelda-majora-s-mask-minecraft-heart.png" Stretch="Fill"/>
-        <Image x:Name="imgH2" Margin="60,524,733,26" Source="png-clipart-minecraft-drawing-pixel-art-the-legend-of-zelda-majora-s-mask-minecraft-heart.png" Stretch="Fill" RenderTransformOrigin="1.273,0.55"/>
+        <Image Opacity="0.2" x:Name="imgPistol" Margin="689,410,76,99" Source="images/pistol.png" Stretch="Fill"   x:FieldModifier="public"  />
+        <Image Opacity="0.2" x:Name="imgLoad" Margin="689,483,76,26" Source="images/ammo.jpg" Stretch="Fill"/>
+        <Image x:Name="imgH1" Margin="0,524,793,25" Source="images/heart.png" Stretch="Fill"/>
+        <Image x:Name="imgH3" Margin="120,524,673,26" Source="images/heart.png" Stretch="Fill"/>
+        <Image x:Name="imgH2" Margin="60,524,733,26" Source="images/heart.png" Stretch="Fill" RenderTransformOrigin="1.273,0.55"/>
         <Button Content="Start" BorderThickness="0" FontSize="20" Background="LightGray" Foreground="Black" HorizontalAlignment="Left" Margin="705,68,0,0" VerticalAlignment="Top" Width="90" Height="45" Click="Button_Click"/>
         <Button x:Name="btnNxtlvl" BorderThickness="3" Opacity="0" Content="Button" HorizontalAlignment="Left" Margin="689,391,0,0" VerticalAlignment="Top" Width="83" Height="165" Click="btnNxtlvl_Click"/>
-        <TextBox x:Name="txtbxTime" BorderThickness="0" FontSize="20" Background="LightGray" Foreground="Black" HorizontalAlignment="Left" Height="32" Margin="29,18,0,0" TextWrapping="Wrap" Text="Time: 0" VerticalAlignment="Top" Width="80"/>
 
     </Grid>
 </Window>

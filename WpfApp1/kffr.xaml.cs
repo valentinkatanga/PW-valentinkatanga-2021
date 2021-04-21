@@ -19,18 +19,22 @@ namespace WpfApp1
     /// </summary>
     public partial class kffr : Window
     {
-        public kffr()
+        MainWindow _main;
+        public kffr(MainWindow main)
         {
             InitializeComponent();
+            _main = main;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if(txtBoxanswer.Text == "dobbelsteen" || txtBoxanswer.Text == "een dobbelsteen")
+            if(txtBoxanswer.Text.ToLower() == "dobbelsteen" || txtBoxanswer.Text.ToLower() == "een dobbelsteen")
             {
-                lblAnswer.Content = "Correct";
-                
-            }else
+                _main.operationC();
+
+                this.Close();
+            }
+            else
             {
                 lblAnswer.Content = "Fout";
             }

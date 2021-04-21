@@ -28,19 +28,28 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
-
+        }
+        public MainWindow(bool completed)
+        {
+            InitializeComponent();
+            imgPistol.Opacity = 1;
+        }
+        public void operationC()
+        {
+            imgPistol.Opacity = 1;
         }
         
 
         private void btnHint_Click(object sender, RoutedEventArgs e)
         {
             txtBoxmsg.Text = "Van Gogh Vincent ";
-            
+            imgH1.Opacity = 0.2;
+
+
         }
 
         private void btnTapijt_Click(object sender, RoutedEventArgs e)
         {
-
             btnTapijt.Content = "Dit is een oude tapijt.";
             btnZetel.Content = "";
             btnBord.Content = "";
@@ -54,8 +63,6 @@ namespace WpfApp1
 
         private void btnBord_Click(object sender, RoutedEventArgs e)
         {
-
-
             btnTapijt.Content = "";
             btnZetel.Content = "";
             btnBord.Content = "";
@@ -65,27 +72,25 @@ namespace WpfApp1
             btnTafel.Content = "";
             btnKastje.Content = "";
             btnAardbol.Content = "";
-            kffr koffer = new kffr();
+            kffr koffer = new kffr(this);
             koffer.Show();
         }
 
         private void btnhorloge_Click(object sender, RoutedEventArgs e)
-        {
-
-            btnTapijt.Content = "";
-            btnZetel.Content = "";
+        { 
             btnBord.Content = "";
-            btnhorloge.Content = "'t Is 23 uur";
-            btnBoekenkast.Content = "";
+            btnZetel.Content = "";
             btnStoel.Content = "";
             btnTafel.Content = "";
+            btnTapijt.Content = "";
             btnKastje.Content = "";
             btnAardbol.Content = "";
+            btnBoekenkast.Content = "";
+            btnhorloge.Content = "'t Is 23 uur";
         }
 
         private void btnBoekenkast_Click(object sender, RoutedEventArgs e)
         {
-
             btnTapijt.Content = "";
             btnZetel.Content = "";
             btnBord.Content = "";
@@ -95,12 +100,10 @@ namespace WpfApp1
             btnTafel.Content = "";
             btnKastje.Content = "";
             btnAardbol.Content = "";
-
         }
 
         private void btnStoel_Click(object sender, RoutedEventArgs e)
         {
-  
             btnTapijt.Content = "";
             btnZetel.Content = "";
             btnBord.Content = "";
@@ -114,7 +117,6 @@ namespace WpfApp1
 
         private void btnTafel_Click(object sender, RoutedEventArgs e)
         {
-
             btnTapijt.Content = "";
             btnZetel.Content = "";
             btnBord.Content = "";
@@ -124,12 +126,10 @@ namespace WpfApp1
             btnTafel.Content = "Er ligt een assenbak op tafel.";
             btnKastje.Content = "";
             btnAardbol.Content = "";
-
         }
 
         private void btnZetel_Click(object sender, RoutedEventArgs e)
         {
-
             btnZetel.Content = "Ik zou willen liggen op de zetel";
             btnTapijt.Content = "";
             btnBord.Content = "";
@@ -139,8 +139,6 @@ namespace WpfApp1
             btnTafel.Content = "";
             btnKastje.Content = "";
             btnAardbol.Content = "";
-
-
         }
 
         private void btnKastje_Click(object sender, RoutedEventArgs e)
@@ -175,25 +173,9 @@ namespace WpfApp1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
-            //DispatcherTimer dispatcherTimer = new DispatcherTimer();
-            //dispatcherTimer.Tick -= new EventHandler(dispatcherTimerTick);
-            //dispatcherTimer.Interval = new TimeSpan(0, 0, 1);
-            //dispatcherTimer.Start();
             imgBack.Opacity = 1;
-
-
-
-
         }
-        //private void dispatcherTimerTick(object sender, EventArgs e)
-        //{
-        //    double seconds = 30;
-        //    txtbxTime.Text = Convert.ToDateTime (seconds);
 
-     
-        //    CommandManager.InvalidateRequerySuggested();
-        //}
 
         private void btnNxtlvl_Click(object sender, RoutedEventArgs e)
         {
