@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApp1.lvl2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="lvl2" Height="450" Width="526.214">
+    <Grid Margin="0,10,133.6,0">
+
+        <Image Source="kill.jpg" Stretch="Fill" Margin="0,0,-129.6,0"/>
+        <Button x:Name="btnShoot" Content="Schieten" HorizontalAlignment="Left" Margin="391,342,-129.6,0" VerticalAlignment="Top" Width="125" Height="68" Click="btnShoot_Click"/>
+        <Image Margin="391,206,-129.6,73" Source="téléchargement.png" Stretch="Fill"/>
+        <TextBox  Background="Transparent" Foreground="White" FontSize="20px" BorderThickness="0" x:Name="txtboxBewaker" HorizontalAlignment="Left" Height="65" Margin="81,10,-50.6,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="356"/>
+
+    </Grid>
+</Window>
