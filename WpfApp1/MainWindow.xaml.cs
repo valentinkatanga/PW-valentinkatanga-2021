@@ -34,7 +34,7 @@ namespace WpfApp1
 
         private void btnHint_Click(object sender, RoutedEventArgs e)
         {
-            txtBoxmsg.Text = "Vincent Van Gogh";
+            txtBoxmsg.Text = "Van Gogh Vincent ";
             
         }
 
