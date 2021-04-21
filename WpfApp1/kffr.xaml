@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="kffr" Height="640" Width="440">
     <Grid>
-        <Image Margin="0,0,-0.4,0.4" Source="safe.jpeg" Stretch="Fill"/>
+        <Image Margin="0,0,-0.4,0.4" Source="images/safe.jpeg" Stretch="Fill"/>
         <Label x:Name="lblEnig"  Background="Transparent" FontWeight="Bold" Foreground="White" FontSize="20" Content="Enigma: Wat heeft ogen maar kan niet zien?" HorizontalAlignment="Left" Margin="0,55,-6.4,0" VerticalAlignment="Top" Height="84" Width="440" RenderTransformOrigin="0.322,0.151"/>
         <TextBox x:Name="txtBoxanswer" Background="Gray" FontSize="18" HorizontalAlignment="Left" Height="77" Margin="10,482,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="254"/>
         <Button x:Name="btnSubmit" Content="Submit" FontSize="16" HorizontalAlignment="Left" Margin="264,482,0,0" VerticalAlignment="Top" Width="87" Height="35" Click="Button_Click"/>

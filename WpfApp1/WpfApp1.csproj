@@ -109,34 +109,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="59635723-stel-bovenaanzicht-voor-het-interieur-design-icoon-geïsoleerde-illustratie-met-sofa-fauteuil-bank.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="photo_escaperoom.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="téléchargement.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="vue-laterale-arriere-balles-coups-neuf-mm-cuivre-or-tete-acier-pour-parabelle-arme-poing-militaire-munitions-armes-feu-metal-isole-fond-transparent-icone-3d-realiste_107791-4297.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="png-clipart-minecraft-drawing-pixel-art-the-legend-of-zelda-majora-s-mask-minecraft-heart.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="heart.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="images\heart.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="kill.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="2.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="safe.jpeg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\background.jpeg" />
