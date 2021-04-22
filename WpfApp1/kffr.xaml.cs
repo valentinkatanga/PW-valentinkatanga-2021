@@ -28,9 +28,9 @@ namespace WpfApp1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if(txtBoxanswer.Text.ToLower() == "dobbelsteen" || txtBoxanswer.Text.ToLower() == "een dobbelsteen")
+            if(txtBoxanswer.Text.ToLower().Trim() == "ebay")
             {
-                _main.operationC();
+                _main.operationA();
 
                 this.Close();
             }

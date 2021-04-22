@@ -29,21 +29,32 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
-        public MainWindow(bool completed)
-        {
-            InitializeComponent();
-            imgPistol.Opacity = 2;
-        }
-        public void operationC()
+        public void operationA()
         {
             imgPistol.Opacity = 3.5;
             lblBoxmsg.Content = lblBoxmsg.Content + "\n" + "Ik heb het wapen gevonden! (klik erop)";
 
         }
+        public void operationB()
+        {
+            lblBoxmsg.Content = "Uw code voor de volgende kamer is Good";
+            if(imgH1.Opacity == 0.2)
+            {
+            lblBoxmsg.Content = "Uw code voor de volgende kamer is Calm";
+            }
+            if (imgH1.Opacity == 0.2 && imgH2.Opacity == 0.2)
+            {
+                lblBoxmsg.Content = "Uw code voor de volgende kamer is Stressful";
+            }
+            if (imgH1.Opacity == 0.2 && imgH2.Opacity == 0.2 && imgH3.Opacity == 0.2)
+            {
+                lblBoxmsg.Content = "Uw code voor de volgende kamer is Dead";
+            }
+
+
+
+        }
         int count = 0;
-
-
-
         private void btnHint_Click(object sender, RoutedEventArgs e)
         {
             count++;
@@ -54,12 +65,13 @@ namespace WpfApp1
                 lblBoxmsg.Content = "Hint 1: Van Gogh Vincent";
                     break;
                 case 2: imgH2.Opacity = 0.2;
-                    lblBoxmsg.Content = "Hint 2: D*****steen";
+                    lblBoxmsg.Content = "Hint 2: Shoppingsite";
                     break;
                 default:
                     imgH3.Opacity = 0.2;
-                    lblBoxmsg.Content = "U bent dood, sorry";
-                    imgBack.Opacity = 0.5;
+                    lblBoxmsg.Content = "Hint 3: ibé ";
+                    btnHint.IsEnabled = false;
+
                     break;
             }
         }
@@ -189,13 +201,16 @@ namespace WpfApp1
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             imgBack.Opacity = 0.9;
+            btnHint.IsEnabled = true;
+            btnStart.IsEnabled = false;
         }
 
 
-        private void btnNxtlvl_Click(object sender, RoutedEventArgs e)
+        public void btnNxtlvl_Click(object sender, RoutedEventArgs e)
         {
-            lvl2 level2 = new lvl2();
+            lvl2 level2 = new lvl2(this);
             level2.Show();
         }
     }
+
 }

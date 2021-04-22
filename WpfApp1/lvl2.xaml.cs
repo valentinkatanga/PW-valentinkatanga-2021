@@ -20,16 +20,21 @@ namespace WpfApp1
     /// </summary>
     public partial class lvl2 : Window
     {
-        public lvl2()
+        MainWindow _window;
+
+        public lvl2(MainWindow main)
         {
             InitializeComponent();
+            _window = main;
         }
+
 
         private void btnShoot_Click(object sender, RoutedEventArgs e)
         {
-            txtboxBewaker.Text = "U hebt de bewaker gedood, u bent vrij!";
+            txtboxBewaker.Text = "U hebt de bewaker gedood, u bent vrij! Bekijk de code op de eerste window";
             imgDwarden.Opacity = 1;
             imgWarden.Opacity = 0;
+            _window.operationB();
         }
     }
 }
