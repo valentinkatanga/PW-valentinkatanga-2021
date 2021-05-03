@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="634" Width="1163.2">
+    <Grid>
+        <Image x:Name="imgBack"  Margin="0,0,0,0.4" Source="images/matrix.jpg" Stretch="Fill"/>
+        <Button x:Name="btnNext" Background="Transparent" BorderThickness="0" HorizontalAlignment="Left" Margin="1114,576,-0.2,0" VerticalAlignment="Top" Width="43" Height="28" Click="btnNext_Click"/>
+        <TextBlock x:Name="txtBlckb" FontSize="20px" Foreground="Black" Background="Green" HorizontalAlignment="Left" Margin="27,321,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="134" Width="520"/>
+        <TextBlock x:Name="txtBlcka" FontSize="20px" Foreground="Black" Background="Green" HorizontalAlignment="Right"  Margin="0,376,61.8,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="134" Width="520"/>
+        <Label x:Name="lblVoice" Content="Docent" Foreground="Green" Background="black" FontSize="30" HorizontalAlignment="Left" Margin="27,264,0,0" VerticalAlignment="Top" Width="179" Height="52"/>
+        <Label x:Name="lblProt" Content="Protagonist" Foreground="Green" Background="black" FontSize="30" HorizontalAlignment="Left" Margin="921,319,0,0" VerticalAlignment="Top" Width="174" Height="52"/>
+        <Image x:Name="imgMorph" Opacity="0" Margin="91,102,755.8,324" Source="images/morpheus.jpg" Stretch="Fill"/>
+        <Image x:Name="imgMorphS" Opacity="0" Margin="91,102,755.8,324" Source="images/morpheusS.jpg" Stretch="Fill"/>
+        <Image x:Name="imgNeo" Opacity="0" Margin="776,102,61.8,324" Source="images/neo.jpg" Stretch="Fill"/>
+        <Image x:Name="imgNeoG" Opacity="0" Margin="776,102,61.8,324" Source="images/neoG.jpg" Stretch="Fill"/>
+
+
+
+    </Grid>
+</Window>
